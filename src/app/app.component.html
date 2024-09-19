@@ -1,0 +1,8 @@
+<div>
+  <h1><img src="../../assets/partyicon.png" alt="icon party">Jokes Api<img src="../../assets/partyicon.png" alt="icon party"></h1> 
+  <p class="data">{{ data.setup }}</p>
+  <button class="reveal-button button-85" (click)="revealPunchline()">GET THE PUNCHLINE !</button>
+  <p *ngIf="showPunchline" class="data">{{ data.punchline }}</p>
+  <button class="refresh-button button-85" (click)="refreshPage()">Get another JOKE</button>
+  <router-outlet />
+</div>
